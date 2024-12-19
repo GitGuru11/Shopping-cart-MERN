@@ -7,7 +7,6 @@ const CartItem = props => {
     <Fragment>
       <tr>
         <td>
-          {" "}
           <img
             src={props.photo}
             alt={props.name}
