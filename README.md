@@ -25,14 +25,10 @@ npm run client
 
 ## More
 
-- If you want to run this project locally, you must change the value of **MONGO_URL** on the config/keys.js file, with your own 
+- If you want to run this project locally, you must change the value of **MONGO_URL** on the config/keys.js file, with your own
   MongoDB Database.
-
-## Author
-
-**germancutraro**
 
 ## Why
 
-* Practice
-* MERN Lover
+- Practice
+- MERN Lover
