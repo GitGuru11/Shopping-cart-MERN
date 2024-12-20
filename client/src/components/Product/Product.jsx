@@ -12,7 +12,8 @@ const Product = props => {
       <div className="Product-Title">
         <p className="Product-Name">{props.name}</p>
       </div>
-      <div className="Product-Data">
+        <div className="Product-Data">
+          <div>Products</div>
         <small className="Product-Price">${props.price}</small>
         <button onClick={ props.addToCart } className="product-button Product-Add">Add to Cart</button>
       </div>
