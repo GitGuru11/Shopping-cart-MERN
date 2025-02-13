@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 const CartItem = (props) => {
   const [result, resResult] = useState({});
+  const [count, setCount] = useState(0);
 
   return (
     <Fragment>
