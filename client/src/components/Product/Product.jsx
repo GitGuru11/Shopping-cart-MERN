@@ -3,8 +3,6 @@ import "./Product.css";
 import PropTypes from "prop-types";
 
 const Product = (props) => {
-  const [item, setItem] = useState({ brand: "zoho" });
-
   return (
     <div className="Product-Wrapper">
       <div className="Product">
