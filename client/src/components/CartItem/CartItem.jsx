@@ -1,8 +1,10 @@
-import React, { Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import "./CartItem.css";
 import PropTypes from "prop-types";
 
-const CartItem = props => {
+const CartItem = (props) => {
+  const [result, resResult] = useState({});
+
   return (
     <Fragment>
       <tr>
@@ -23,12 +25,16 @@ const CartItem = props => {
           <button onClick={props.addItem} className="Quantity-Button">
             +
           </button>
-
         </td>
         <td>${props.price}</td>
-        <td><i className="fa fa-times" onClick={props.removeWholeItem} style={{ color: 'red', cursor: 'pointer' }}></i></td>
+        <td>
+          <i
+            className="fa fa-times"
+            onClick={props.removeWholeItem}
+            style={{ color: "red", cursor: "pointer" }}
+          ></i>
+        </td>
       </tr>
-
     </Fragment>
   );
 };
@@ -40,6 +46,6 @@ CartItem.propTypes = {
   quantity: PropTypes.number.isRequired,
   addItem: PropTypes.func.isRequired,
   removeItem: PropTypes.func.isRequired,
-}
+};
 
 export default CartItem;
